@@ -4,9 +4,9 @@ const { randomBytes } = require("crypto");
 
 const app = express();
 
-const posts = {};
-
 app.use(bodyParser.json());
+
+const posts = {};
 
 app.get("/posts", (req, res) => {
   res.send(posts);
